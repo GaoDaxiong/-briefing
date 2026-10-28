@@ -43,6 +43,10 @@ nav.bottom a.on{color:var(--accent)}
 footer{margin:34px 0 8px;color:var(--sub);font-size:12.5px;text-align:center}
 #topBtn{position:fixed;right:16px;bottom:86px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--accent);font-size:18px;cursor:pointer;box-shadow:0 4px 14px rgba(16,24,40,.12)}
 .src p{background:var(--card);border-radius:12px;padding:11px 15px;color:var(--sub);font-size:14.5px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.archive{margin-top:14px;display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.archive .alabel{font-size:13px;font-weight:700;color:var(--sub)}
+.archive select{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:6px 12px;font-size:13.5px;font-weight:600;cursor:pointer}
+.archlink{font-size:13.5px;color:var(--accent);text-decoration:none;font-weight:700}
 </style>
 </head>
 <body>
@@ -54,6 +58,7 @@ footer{margin:34px 0 8px;color:var(--sub);font-size:12.5px;text-align:center}
 <h1>X 热点每日简报</h1>
 <p>Boss，今日全球焦点是北欧领导人罕见地直接致电普京谈乌克兰和平、德国警告美俄不能绕开基辅与欧洲做交易，以及气旋“阿纳布”逼近印度东海岸、近 10 万人撤离；AI 圈的最大事件是 Google DeepMind 发布可实时交互的世界模型 Genie 4，OpenAI 与 Anthropic 同日宣称的“证伪指数时间假说”则因未获独立证实而引发争议。</p>
 <div class="tags"><span>全球 8</span><span>AI 资讯 39</span><span>教程 35</span><span>共 82 条</span></div>
+<div class="archive"><span class="alabel">📚 往期</span><select id="archiveSel" onchange="if(this.value)location.href=this.value"><option value="2026-10-28.html" selected>10 月 28 日 · 星期三（最新）（本期）</option><option value="2026-10-27.html">10 月 27 日 · 星期二</option></select></div>
 </header>
 
 <section id="global"><h2>🌍 全球综合热点</h2><p class="secsub">过去 24 小时 X 上最热的全球话题</p>
